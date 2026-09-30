@@ -1,0 +1,70 @@
+{
+  "title": {
+    "en": "Ghana — Connectivity and Population",
+    "fr": "Ghana — Connectivité et population"
+  },
+  "iso3": "GHA",
+  "country": "Ghana",
+  "languages": [
+    "en",
+    "fr"
+  ],
+  "reference_period": "2026Q2",
+  "quarters_processed": [
+    "2026Q2",
+    "2026Q1",
+    "2025Q4",
+    "2025Q3"
+  ],
+  "services": [
+    "fixed",
+    "mobile"
+  ],
+  "admin_level": "ADM2",
+  "generated": "2026-09-30T13:21:56",
+  "sources": {
+    "ookla": {
+      "name": "Ookla Speedtest Open Data",
+      "licence": "CC BY-NC-SA 4.0",
+      "url": "https://github.com/teamookla/ookla-open-data",
+      "resolution": "Web Mercator z16 (~611 m at the equator)"
+    },
+    "worldpop": {
+      "name": "WorldPop 2025 1km",
+      "product": "Global 2 R2025A",
+      "release": "R2025A",
+      "is_projection": true,
+      "licence": "CC BY 4.0",
+      "url": "https://www.worldpop.org"
+    },
+    "geoboundaries": {
+      "name": "geoBoundaries gbOpen",
+      "licence": "CC BY 4.0",
+      "url": "https://www.geoboundaries.org"
+    }
+  },
+  "methods": {
+    "weighting": "population-weighted median; cell population shared equally among the tiles whose centroid falls in the cell",
+    "coverage": "share of population in 1 km cells containing >= 1 measured tile",
+    "thresholds_mbps": {
+      "broadband": 10,
+      "high_quality": 25
+    },
+    "settlement_density_thresholds": {
+      "urban": 1500,
+      "periurban": 300
+    }
+  },
+  "headline": {
+    "d_median_pop": 19.566942866228665,
+    "d_median_tile": 19.217,
+    "pct_above_bb": 68.47041804672936,
+    "pct_above_hi": 42.551265376067995,
+    "pop_coverage_pct": 24.471937188606635,
+    "area_coverage_pct": 0.4162908924081116,
+    "lat_median_pop": 27.0
+  },
+  "population_total": 34569095.62994522,
+  "connectivity_gini": 0.5428833122023702,
+  "licence_of_this_product": "CC BY-NC-SA 4.0 (inherited from Ookla, share-alike)"
+}
